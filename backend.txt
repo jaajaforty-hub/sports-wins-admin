@@ -1,0 +1,71 @@
+﻿id,team,country
+1,Al Hilal,Saudi
+2,Al Nassr,Saudi
+3,Always Ready,Bolivia
+4,APOEL,Cyprus
+5,Aris,Cyprus
+6,Arsenal,England
+7,Atl. Madrid,Spain
+8,AEK Athens FC,Greece
+9,AEK Larnaca,Greece
+10,Ajax,Netherland
+11,AZ Alkmaar,Netherland
+12,Barcelona,Spain
+13,Bayern Munich,Germany
+14,Benfica,Portigual
+15,Bodo/Glimt,Norway
+16,Brann,Norway
+17,Celtic,Scotland
+18,Chelsea,England
+19,Club Brugge KV,Belguim
+20,Copenhagen,Denmark
+21,Din. Zagreb,Croatia
+22,Dyn. Kyiv,Ukrain
+23,FC Porto,Portigual
+24,Ferencvaros,Hunguary
+25,Feyenoord,Netherland
+26,Galatasaray,Turkey
+27,Hajduk Split,Croatia
+28,Lille,France
+29,Inter,Italy
+30,Juventus,Italy
+31,Kuala Lumpur City,Bolivia
+32,LASK,Austria
+33,Liverpool,England
+34,Ludogorets,Turkey
+35,Salzburg,Austria
+36,Maccabi Haifa,Israel
+37,Maccabi Tel Aviv,Israel
+38,Malmo FF,Scotland
+39,Manchester City,England
+40,Manchester Utd,England
+41,Midtjylland,Denmark
+42,Nacional,Argetina
+43,Napoli,Italy
+44,Newtown,Cyprus
+45,Nordsjaelland,Cyprus
+46,Olympiacos Piraeus,Greece
+47,Osijek,Croatia
+48,PAOK,Greece
+49,Pafos,Greece
+50,Shakhtar Donetsk,Turkey
+51,Shanghai Port FC,China
+52,Sheriff Tiraspol,Poland
+53,Slavia Prague,Czech
+54,Slovan Bratislava,S-America
+55,Sparta Prague,Czech
+56,Sporting CP,Portigual
+57,Plzen,Czech
+58,PSG,France
+59,Qarabag,Slovakia
+60,Rangers,Scotland
+61,RB Leipzig,Germany
+62,Real Madrid,Spain
+63,Panathinaikos,Scotland
+64,Sydney FC,N-America
+65,The Strongest,Bolivia
+66,TNS,Wales
+67,Viking,Cyprus
+68,Partizan,Cyprus
+69,Zenit,Russia
+70,Zilina,Russia

@@ -1,0 +1,82 @@
+
+<%- include("partials/header.ejs") %>
+<h1 class="day-title">TUESDAY</h1> 
+
+<div class="center-main">
+
+    <div class="table">
+        <% locals.teams.forEach(team => { %>
+            <div class="t-teams">
+                <img src=<%= team.logo %>>
+                <div><%= team.team_name %></div>
+                <div><%= team.country %></div>
+            </div>
+        <% }); %>
+
+    </div>
+        
+    <form class="main" action="/tuesday" method="POST">
+        
+          <div class="teamInputs">
+
+        <div class="teamOne">
+          <label class="team-name">Team 1</label>
+          <input type="text" name="name_team_one" class="t-name" required>
+          <label class="team-name">Results</label>
+          <input type="text" name="results-one" class="t-results" required>
+          <label class="team-name">Odd</label>
+          <input type="text" name="odd_team_one" class="t-name" required>
+          <label class="team-name">Time</label>
+          <input type="text" name="time_team_one" class="t-name" required>
+        </div>
+    
+        <div class="teamTwo">
+          <label class="team-name">Team 2</label>
+          <input type="text" name="name_team_two" class="t-name" required>
+          <label class="team-name">Results</label>
+          <input type="text" name="results-two" class="t-results" required>
+          <label class="team-name">Odd</label>
+          <input type="text" name="odd_team_two" class="t-name" required>
+          <label class="team-name">Time</label>
+          <input type="text" name="time_team_two" class="t-name" required>
+        </div>
+
+        <div class="teamThree">
+          <label class="team-name">Team 3</label>
+          <input type="text" name="name_team_three" class="t-name" required>
+          <label class="team-name">Results</label>
+          <input type="text" name="results-three" class="t-results" required>
+          <label class="team-name">Odd</label>
+          <input type="text" name="odd_team_three" class="t-name" required>
+          <label class="team-name">Time</label>
+          <input type="text" name="time_team_three" class="t-name" required>
+        </div>  
+
+        <div class="teamFour">
+          <label class="team-name">Team 4</label>
+          <input type="text" name="name_team_four" class="t-name" required>
+          <label class="team-name">Results</label>
+          <input type="text" name="results-four" class="t-results" required>
+          <label class="team-name">Odd</label>
+          <input type="text" name="odd_team_four" class="t-name" required>
+          <label class="team-name">Time</label>
+          <input type="text" name="time_team_four" class="t-name" required>
+        </div>
+        <input type="submit" class="submit-button" value="SUBMIT">
+        <button type="button" class="clear-button" id="clrButton" >CLEAR ALL</button>
+      </div>
+        
+    </form>
+</div>
+
+<div class="message"><%= locals.message%></div> 
+<script>
+  const inputFields =document.querySelectorAll("input");
+  document.getElementById("clrButton").addEventListener("click",()=>{
+    inputFields.forEach(e=>{
+      e.value = ""
+    })
+    
+  }) 
+</script>
+

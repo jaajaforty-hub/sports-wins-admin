@@ -1,0 +1,262 @@
+:root{
+    --maincolor: #e7e7e7;
+    --headings: rgb(56, 58, 58);
+    --subheadings: hsl(180, 34%, 65%);
+    --darkgray: #a9a9a9;
+    --lightgray: #d3d3d3;
+    --logo: Tektur;
+    --headingf: Archivo;
+    --darkcyna: #0e7c80;
+    --accent-orange: #FF8C42;
+    --bg-light: #edeeee;
+    --subtitle: rgb(180, 135, 68);
+}
+
+#logo{
+    font-family: var(--logo);
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+    height: auto !important;
+    background-color: var(--headings);
+    width: 99vw; height: 60px;
+    border-radius: 2px; 
+    align-items: center;
+}
+@media(max-width:700px){
+    #logo{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px;
+    flex: 1;
+    }
+    .userInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    flex: 1;
+    }
+}
+
+#logo > h2{
+    min-width: 400px;
+    color: var(--accent-orange);
+    margin-left: 30px;
+    
+}
+.userInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 10px;
+    gap: 0px;
+    color: var(--accent-orange);
+
+}
+
+.user{
+  background-color: var(--accent-orange);
+  color: var(--headings);
+  border-radius: 5px;
+  padding: 8px;
+  margin-left: 20px;
+}
+.user:hover{
+    box-shadow: 2px 2px 2px 3px var(--darkgray);
+}
+.home{
+  background-color: var(--accent-orange);
+  color: var(--headings);
+  border-radius: 5px;
+  padding: 8px;
+  text-decoration: none;
+  
+
+}
+.home:hover{
+    box-shadow: 2px 2px 2px 3px var(--darkgray);
+}
+.day-title{
+    background-color: var(--headings);
+    width: 30vw;
+    height: 3vh;
+    text-align: center;
+    margin-left: 35vw;
+    margin-top: 5vh;
+    font-family: var(--headingf);
+    font-size: large;
+    padding: 10px;
+    color: var(--accent-orange);
+    border-radius: 5px;
+}
+
+/*=================== center main div with the table and the div containing inputs fiels================ */
+
+.center-main{
+    display: block;
+  
+
+    
+    margin-left: 4%;
+    border-radius: 5px;
+    
+    padding-bottom: 150px;
+    height: auto;
+    width: 95vw;
+
+    
+}
+
+/*===================== Table and the components ===================== */
+.table{
+    display: block;
+    overflow-y:scroll ;
+    overflow-x: hidden;
+    border-radius: 5px;
+    border: 2px solid var(--headings);
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    box-shadow: 1px 1px 10px 1px rgb(104, 103, 103);
+    height: 300px;
+    width: 2fr;
+    padding-bottom: 20px;
+    color: #9CB080;
+    background: var(--headings);
+    font-weight: lighter;
+    font-size: x-large;
+    font-family: var(--headingf);
+ 
+
+}
+.team_heading{
+    margin: 50px 0px 0px 4%;
+    font-size: x-large; 
+    font-family: var(--headingf);
+    font-weight: lighter;
+    background-color: var(--headings);
+    width: 30vw;
+    height: 3vh;
+    text-align: center;
+  
+   
+    font-family: var(--headingf);
+    font-size: large;
+    padding: 20px;
+    color: var(--accent-orange) ;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+   
+   
+}
+
+.t-teams{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    margin-top: 30px;
+
+    width: 90%;
+    height: 40px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/*========================= The Rigth div with the inputs =============================== */
+
+.main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 5px; 
+    gap: 40px;
+    height: 100%;
+    width: 2fr;
+    margin-top: 50px;
+   
+}
+.days  {
+
+      
+    background-color:var(--headings);
+    transition: .5s;
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+    gap: 20px;
+    height: 20px;
+    box-shadow: 10px 10px 10px 10px #b6ac99;  
+    border-radius: 10px;
+    border: 2px solid var(--headings);
+    padding: 60px;  
+    color: var(--accent-orange); 
+    font-family: var(--headingf); 
+    font-weight: 800; 
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 2px 3px;
+    flex: 1;
+    width: 100px;
+    min-width: 150px;
+}
+.days:hover{
+    box-shadow: 0px 0px 20px 10px var(--accent-orange);
+    height: 25px;
+
+}
+
+
+.teamInputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 15px;
+    font-family: var(--headingf); 
+    border: 2px solid var(--headings);
+    width: 100%;
+    padding: 20px 50px 20px 0px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    background: linear-gradient(to right, var(--accent-orange), var(--headings), var(--accent-orange), var(--headings));
+    color: var(--accent-orange);
+    align-items: center;
+}
+.teamInputs >*{
+    margin-top: 70px;
+    margin-left: 100px;
+    
+}
+
+.teamInputs > div >*{
+    margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+}
+.teamInputs > div > input{
+  width: 200px;
+}
+.submit-button,.clear-button{
+    margin-left: 150px; 
+    margin-top: 80px; 
+    font-weight: 800; 
+    height: 50px; 
+    border: 5px solid var(--headings);
+    border-radius: 10px; 
+    color: var(--accent-orange);
+    width: 150px;
+    background-color: var(--headings);
+}
+.submit-button:hover{
+     box-shadow: 0px 0px 20px 10px var(--headings);
+}
+.clear-button:hover{
+    box-shadow: 0px 0px 20px 10px var(--headings);
+}
+.message{
+    color: var(--accent-orange); 
+   
+    font-size:x-large;
+    font-family: var(--logo); 
+}

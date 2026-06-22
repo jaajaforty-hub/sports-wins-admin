@@ -1,0 +1,43 @@
+
+<%- include("partials/header.ejs") %>
+ <div class="team_heading">
+            TEAM INFORMATION
+        </div>
+<div class="center-main">
+
+    <div class="table">
+       
+        <% locals.teams.forEach(team => { %>
+            <div class="t-teams">
+                <img class="logo" src=<%= team.logo %> >
+                <div ><%= team.team_name %></div>
+                <div><%= team.country %></div>
+            </div>
+        <% }); %>
+
+    </div>
+        
+    <main class="main">
+        
+        
+        <a href="/sunday" class="days">SUNDAY</a>
+        <a href="/monday" class="days">MONDAY</a>
+        <a href="/tuesday" class="days">TUESDAY</a>
+        <a href="/wednesday" class="days" >WEDNESDAY</a>
+        <a href="/thurday" class="days">THURDAY</a>
+        <a href="/friday" class="days">FRIDAY</a>
+        <a href="/saturday" class="days">SATURDAY</a>
+       
+        
+    </main>
+
+
+</div>
+
+
+    
+
+
+
+
+
