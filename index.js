@@ -1,6 +1,6 @@
 ﻿import express from "express";
 import bodyParser from "body-parser";
-import {Pool} from "pg";
+import pg from "pg";
 import jwt from "jsonwebtoken"
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
@@ -10,12 +10,15 @@ dotenv.config()
 const app = express();
 
 
-const db = new Pool({
-  connectionString: process.env.DB_CONNECTIONS,
-  ssl: {
-    rejectUnauthorized: false
-  }
+const db = new pg.Pool({
+  user: 'postgres',
+  host: 'localhost',         
+  database: 'data',
+  password: '1841', 
+  port: 5432,
+          
 });
+
 
 app.use(express.static("public"));
 app.use(express.urlencoded({extended:true}));

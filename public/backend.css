@@ -130,6 +130,11 @@
  
 
 }
+.logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 .team_heading{
     margin: 50px 0px 0px 4%;
     font-size: x-large; 
