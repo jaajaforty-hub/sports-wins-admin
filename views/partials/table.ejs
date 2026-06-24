@@ -6,12 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <% locals.teams.forEach(team => { %>
-            <div class="t-teams">
-                <img class="logo" src=<%= team.logo %> >
-                <div ><%= team.team_name %></div>
-                <div><%= team.country %></div>
-            </div>
-        <% }); %>
+<% if (teams.length > 0) { %>
+    <% teams.forEach(team => { %>
+        <div class="t-teams">
+            <img class="logo" src="<%= team.logo %>">
+            <div><%= team.team_name %></div>
+            <div><%= team.country %></div>
+        </div>
+    <% }) %>
+  
+<% } %>
+
 </body>
 </html>

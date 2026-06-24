@@ -11,8 +11,11 @@ const app = express();
 
 
 const db = new pg.Pool({
-  connectionString:process.env.DB_CONNECTIONS,
-  ssl:{rejectUnauthorized:false}
+  user: 'postgres',
+  host: 'localhost',         
+  database: 'data',
+  password: '1841', 
+  port: 5432,
           
 });
 
@@ -25,6 +28,7 @@ let teams = []
 async function getTable() {
    const data  = await db.query('SELECT * FROM teams')
    teams = data.rows 
+   return teams
     
 }
 getTable()
